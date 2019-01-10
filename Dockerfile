@@ -1,10 +1,7 @@
 FROM node:latest
-
-EXPOSE 8080
-
-COPY ./ /var/wwww/app
-
-WORKDIR /var/www/app
-
+RUN mkdir /app
+WORKDIR /app
+ADD . /app
 RUN npm install
+EXPOSE 8080
 CMD npm start

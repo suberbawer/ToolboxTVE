@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux'
 import { sendText } from './Reducers/PageState'
 
 class App extends Component {
-  state = { 
+  state = {
     val: ''
   }
 
@@ -25,10 +25,10 @@ class App extends Component {
 
   render() {
     const { txt } = this.props
-    
+
     return (
       <div style={{ padding: '15%' }}>
-        <form onSubmit={ this._sendText } className="needs-validation" noValidate>
+        <form onSubmit={ this._sendText } className="needs-validation" novalidate>
           <div className="form-row">
             <div className="col-md-12 xs-12 sm-12 lg-12 mb-3 input-group">
               <input type="text" className="form-control" placeholder="write the text" onChange={ e => this.onInputChange(e.target.value) } required />

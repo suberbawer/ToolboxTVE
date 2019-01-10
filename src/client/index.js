@@ -8,14 +8,14 @@ import App from './App'
 import PageState from './Reducers/PageState'
 
 const store = compose(applyMiddleware(thunk))
-	(createStore)
-	(PageState, PageState.initialState, 
-	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())// This could be generic combining reducers.
-  
+  (createStore)
+  (PageState, PageState.initialState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())// This could be generic combining reducers.
+
   ReactDOM.render(
     <Provider store={ store }>
       <App />
     </Provider>,
-    
+
     document.getElementById('root')
   )

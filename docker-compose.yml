@@ -1,6 +1,6 @@
 node:
   build: .
   volumes:
-    - .:/var/www/app
+    - ".:/src/"
   ports:
     - "8080:8080"

@@ -10,7 +10,7 @@
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "NODE_ENV=test mocha src/test/apiTest.js"
-  },  
+  },
   "author": "Santi Blank",
   "license": "ISC",
   "dependencies": {
